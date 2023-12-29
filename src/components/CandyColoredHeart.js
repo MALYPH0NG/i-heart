@@ -10,13 +10,13 @@ const colors = [
 ];
 
 const CandyColoredHeart = (props) => {
-    const randomCol = colors[Math.floor(Math.random * colors.length)];
+    const randomCol = colors[Math.floor(Math.random() * colors.length)];
     return (
         <div className='heart'>
             <div className='heart-img'>
                 <HeartSVG col={randomCol}/>
             </div>
-            <p className='heart-message'>{props.message}</p>
+            <p className='heart-message'>{props.msg}</p>
         </div>
     )
 }
